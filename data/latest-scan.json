@@ -1,6 +1,6 @@
 {
-  "started_at": "2026-09-08T15:04:44",
-  "finished_at": "2026-09-08T15:04:44",
+  "started_at": "2026-09-08T15:22:02",
+  "finished_at": "2026-09-08T15:22:02",
   "providers": [
     "demo",
     "demo_gds"
@@ -40,7 +40,7 @@
       "reasons": [
         "-52% vs médiane 657"
       ],
-      "deep_link": "https://www.google.com/travel/flights?q=YUL%20LIS"
+      "deep_link": "https://www.google.com/travel/flights?q=Flights%20from%20YUL%20to%20LIS%20on%202026-12-21%20through%202026-12-28"
     },
     {
       "route": "YUL-CDG",
@@ -61,7 +61,7 @@
         "-49% vs médiane 816",
         "z-score robuste -5.3"
       ],
-      "deep_link": "https://www.google.com/travel/flights?q=YUL%20CDG"
+      "deep_link": "https://www.google.com/travel/flights?q=Flights%20from%20YUL%20to%20CDG%20on%202026-10-14%20through%202026-10-28"
     },
     {
       "route": "YUL-LIS",
@@ -81,7 +81,7 @@
       "reasons": [
         "-43% vs médiane 657"
       ],
-      "deep_link": "https://www.google.com/travel/flights?q=YUL%20LIS"
+      "deep_link": "https://www.google.com/travel/flights?q=Flights%20from%20YUL%20to%20LIS%20on%202026-10-08%20through%202026-10-22"
     },
     {
       "route": "YUL-BCN",
@@ -101,7 +101,7 @@
       "reasons": [
         "z-score robuste -3.0"
       ],
-      "deep_link": "https://www.google.com/travel/flights?q=YUL%20BCN"
+      "deep_link": "https://www.google.com/travel/flights?q=Flights%20from%20YUL%20to%20BCN%20on%202026-11-07%20through%202026-11-17"
     }
   ]
 }
