@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>✈️ Flight Deals — Aubaines de vols détectées</title>
+  <meta name="description" content="Aubaines de vols détectées automatiquement par pipeline multi-source. Prix trouvés vs prix moyens, liens de réservation.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>">
+  <style>
+    :root {
+      --bg:        #0f172a;
+      --card:      #1e293b;
+      --card-2:    #334155;
+      --accent:    #38bdf8;
+      --accent-2:  #0ea5e9;
+      --green:     #22c55e;
+      --amber:     #f59e0b;
+      --red:       #ef4444;
+      --text:      #f1f5f9;
+      --muted:     #94a3b8;
+      --border:    #334155;
+      --radius:    16px;
+      --shadow:    0 4px 24px rgba(0,0,0,0.3);
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    /* ---- Header ---- */
+    header {
+      background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+    header h1 { font-size: 2rem; font-weight: 800; letter-spacing: -0.02em; }
+    header h1 span { color: var(--accent); }
+    header .subtitle { color: var(--muted); font-size: 0.95rem; margin-top: 0.3rem; }
+    header .meta {
+      display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;
+      margin-top: 1rem; font-size: 0.85rem; color: var(--muted);
+    }
+    header .meta b { color: var(--text); }
+
+    /* ---- Layout ---- */
+    main { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+    .section-title {
+      font-size: 1.1rem; font-weight: 700; margin-bottom: 1.25rem;
+      display: flex; align-items: center; gap: 0.5rem;
+    }
+    .section-title .count {
+      background: var(--accent-2); color: #fff; border-radius: 99px;
+      padding: 2px 12px; font-size: 0.8rem; font-weight: 600;
+    }
+
+    /* ---- Deal Card ---- */
+    .deal-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin-bottom: 1.5rem;
+      border: 1px solid var(--border);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+    }
+    .deal-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+    @media (max-width: 700px) { .deal-card { grid-template-columns: 1fr; } }
+
+    /* Image */
+    .deal-img {
+      position: relative; height: 220px; overflow: hidden;
+      background: var(--card-2);
+    }
+    .deal-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .deal-img .badge-top {
+      position: absolute; top: 12px; left: 12px;
+      background: rgba(0,0,0,0.7); backdrop-filter: blur(8px);
+      border-radius: 8px; padding: 4px 12px; font-size: 0.8rem; font-weight: 600;
+    }
+    .deal-img .badge-top.confirmed { background: rgba(34,197,94,0.85); }
+    .deal-img .city-name {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      background: linear-gradient(transparent, rgba(0,0,0,0.8));
+      padding: 1.5rem 1rem 0.8rem; font-size: 1.3rem; font-weight: 800;
+    }
+    .deal-img .city-name small { font-size: 0.75rem; font-weight: 400; color: var(--muted); }
+
+    /* Body */
+    .deal-body { padding: 1.25rem 1.5rem; }
+    .deal-body .route {
+      font-size: 0.8rem; color: var(--muted); font-weight: 600;
+      letter-spacing: 0.05em; text-transform: uppercase;
+    }
+
+    /* Price block */
+    .price-row { display: flex; align-items: baseline; gap: 1rem; margin: 0.5rem 0 0.25rem; }
+    .price-now {
+      font-size: 2.2rem; font-weight: 800; color: var(--green);
+    }
+    .price-was {
+      font-size: 1.1rem; color: var(--muted); text-decoration: line-through;
+    }
+    .price-save {
+      background: rgba(34,197,94,0.15); color: var(--green);
+      border-radius: 8px; padding: 2px 10px; font-size: 0.85rem; font-weight: 700;
+    }
+
+    /* Bar comparison */
+    .bar-wrap { margin: 0.75rem 0; }
+    .bar-label { font-size: 0.75rem; color: var(--muted); display: flex; justify-content: space-between; }
+    .bar-track {
+      height: 8px; background: var(--card-2); border-radius: 99px; margin-top: 4px; overflow: hidden;
+    }
+    .bar-fill {
+      height: 100%; border-radius: 99px;
+      background: linear-gradient(90deg, var(--green), var(--accent));
+      transition: width 0.6s ease;
+    }
+
+    /* Meta grid */
+    .meta-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+      gap: 0.75rem; margin: 1rem 0;
+    }
+    .meta-item {
+      background: var(--card-2); border-radius: 10px; padding: 0.6rem 0.8rem;
+    }
+    .meta-item .label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.03em; }
+    .meta-item .value { font-size: 0.95rem; font-weight: 600; margin-top: 2px; }
+
+    /* Sources */
+    .sources { display: flex; gap: 0.4rem; flex-wrap: wrap; margin: 0.5rem 0; }
+    .source-tag {
+      background: var(--card-2); border: 1px solid var(--border);
+      border-radius: 6px; padding: 2px 8px; font-size: 0.72rem; color: var(--muted);
+    }
+    .source-tag.verified { border-color: var(--green); color: var(--green); }
+
+    /* CTA button */
+    .cta {
+      display: inline-block; margin-top: 0.5rem;
+      background: var(--accent); color: #0f172a;
+      padding: 0.7rem 1.5rem; border-radius: 10px;
+      font-weight: 700; font-size: 0.95rem; text-decoration: none;
+      transition: background 0.15s;
+    }
+    .cta:hover { background: var(--accent-2); color: #fff; }
+
+    /* Stats bar */
+    .stats-bar {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(140px,1fr));
+      gap: 1rem; margin-bottom: 2rem;
+    }
+    .stat-box {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 12px; padding: 1rem; text-align: center;
+    }
+    .stat-box .num { font-size: 1.8rem; font-weight: 800; color: var(--accent); }
+    .stat-box .lbl { font-size: 0.78rem; color: var(--muted); margin-top: 2px; }
+
+    /* Footer */
+    footer {
+      text-align: center; padding: 2rem; color: var(--muted); font-size: 0.82rem;
+      border-top: 1px solid var(--border);
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>✈️ <span>Flight</span> Deals</h1>
+  <p class="subtitle">Aubaines de vols détectées automatiquement · pipeline multi-source</p>
+  <div class="meta" id="meta"></div>
+</header>
+
+<main>
+  <div class="stats-bar" id="stats-bar"></div>
+  <div class="section-title">
+    🏷️ Aubaines actives
+    <span class="count" id="deal-count">0</span>
+  </div>
+  <div id="deals"></div>
+</main>
+
+<footer>
+  Données fournies par <a href="#">flightdeals pipeline</a> · Mise à jour à chaque scan ·
+  <span id="footer-time"></span>
+</footer>
+
+<script>
+// ======================== CONFIG ========================
+// métadonnées visuelles par corridor (IATA origine-destination)
+const ROUTE_META = {
+  'YUL-CDG': { city: 'Paris',      country: 'France',         emoji: '🇫🇷', seed: 'paris-eiffel' },
+  'YUL-NRT': { city: 'Tokyo',      country: 'Japon',          emoji: '🇯🇵', seed: 'tokyo-shibuya' },
+  'YUL-LIS': { city: 'Lisbonne',   country: 'Portugal',       emoji: '🇵🇹', seed: 'lisbon-tram' },
+  'YUL-BCN': { city: 'Barcelone',  country: 'Espagne',        emoji: '🇪🇸', seed: 'barcelona-gaudi' },
+  'YUL-CUN': { city: 'Cancún',     country: 'Mexique',        emoji: '🇲🇽', seed: 'cancun-beach' },
+  'YUL-LAX': { city: 'Los Angeles',country: 'États-Unis',     emoji: '🇺🇸', seed: 'la-hollywood' },
+};
+const AIRLINE_NAMES = {
+  AC: 'Air Canada', AF: 'Air France', LH: 'Lufthansa',
+  TS: 'Air Transat', DL: 'Delta', UA: 'United', WS: 'WestJet',
+};
+// fallback générique
+function routeMeta(route) {
+  if (ROUTE_META[route]) return ROUTE_META[route];
+  const dest = route.split('-')[1] || route;
+  return { city: dest, country: '', emoji: '🌍', seed: dest.toLowerCase() };
+}
+
+// ======================== RENDER ========================
+function fmtPrice(n) {
+  return Math.round(n).toLocaleString('fr-CA') + ' $';
+}
+function fmtDate(s) {
+  if (!s) return '—';
+  const d = new Date(s + 'T00:00:00');
+  return d.toLocaleDateString('fr-CA', { day: 'numeric', month: 'short', year: 'numeric' });
+}
+
+function renderMeta(scan) {
+  const el = document.getElementById('meta');
+  const providers = scan.providers.join(' + ');
+  el.innerHTML = `
+    <span>🔍 Sources: <b>${providers}</b></span>
+    <span>🛫 Routes: <b>${scan.routes_scanned}</b></span>
+    <span>📊 Prix relevés: <b>${scan.quotes_seen}</b></span>
+    <span>⏰ Scan: <b>${fmtDate(scan.finished_at.split('T')[0])} ${scan.finished_at.split('T')[1]}</b></span>
+  `;
+}
+
+function renderStats(scan) {
+  const el = document.getElementById('stats-bar');
+  const savings = scan.deals.reduce((sum, d) => sum + (d.baseline - d.price), 0);
+  el.innerHTML = `
+    <div class="stat-box"><div class="num">${scan.deals.length}</div><div class="lbl">Aubaines détectées</div></div>
+    <div class="stat-box"><div class="num">${scan.deals_confirmed}</div><div class="lbl">Confirmées multi-source</div></div>
+    <div class="stat-box"><div class="num" style="color:var(--green)">${fmtPrice(savings)}</div><div class="lbl">Économies potentielles</div></div>
+    <div class="stat-box"><div class="num">${scan.deals.length > 0 ? Math.round(scan.deals.reduce((s,d)=>s+d.drop_pct,0)/scan.deals.length*100) : 0}%</div><div class="lbl">Baisse moyenne</div></div>
+  `;
+}
+
+function renderDeal(deal) {
+  const meta = routeMeta(deal.route);
+  const airlineName = AIRLINE_NAMES[deal.airline] || deal.airline || '—';
+  const dropPct = Math.round(deal.drop_pct * 100);
+  const savings = deal.baseline - deal.price;
+  const barWidth = Math.min(100, (deal.price / deal.baseline) * 100);
+  const imgUrl = `https://picsum.photos/seed/${meta.seed}/560/440`;
+  const confirmedBadge = deal.confirmed
+    ? `<div class="badge-top confirmed">✅ Confirmé · ${deal.confirmations} sources</div>`
+    : `<div class="badge-top">🔍 ${deal.sources.join(' + ')}</div>`;
+
+  return `
+  <div class="deal-card">
+    <div class="deal-img">
+      <img src="${imgUrl}" alt="${meta.city}" loading="lazy">
+      ${confirmedBadge}
+      <div class="city-name">${meta.emoji} ${meta.city}<br><small>${deal.route} · ${meta.country}</small></div>
+    </div>
+    <div class="deal-body">
+      <div class="route">${deal.route}</div>
+      <div class="price-row">
+        <span class="price-now">${fmtPrice(deal.price)} ${deal.currency}</span>
+        <span class="price-was">${fmtPrice(deal.baseline)}</span>
+        <span class="price-save">−${dropPct}%</span>
+      </div>
+
+      <div class="bar-wrap">
+        <div class="bar-label">
+          <span>Prix trouvé</span>
+          <span>Prix moyen: ${fmtPrice(deal.baseline)}</span>
+        </div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width:${barWidth}%"></div>
+        </div>
+      </div>
+
+      <div class="meta-grid">
+        <div class="meta-item">
+          <div class="label">Aller</div>
+          <div class="value">${fmtDate(deal.depart_date)}</div>
+        </div>
+        <div class="meta-item">
+          <div class="label">Retour</div>
+          <div class="value">${fmtDate(deal.return_date)}</div>
+        </div>
+        <div class="meta-item">
+          <div class="label">Compagnie</div>
+          <div class="value">${airlineName}</div>
+        </div>
+        <div class="meta-item">
+          <div class="label">Économie</div>
+          <div class="value" style="color:var(--green)">${fmtPrice(savings)}</div>
+        </div>
+      </div>
+
+      <div class="sources">
+        ${deal.sources.map(s => `<span class="source-tag ${deal.confirmed ? 'verified' : ''}">${s}</span>`).join('')}
+      </div>
+
+      <a href="${deal.deep_link}" target="_blank" rel="noopener" class="cta">
+        🛒 Réserver ce vol →
+      </a>
+    </div>
+  </div>
+  `;
+}
+
+function render(scan) {
+  document.getElementById('deal-count').textContent = scan.deals.length;
+  document.getElementById('footer-time').textContent =
+    'Dernier scan: ' + scan.finished_at;
+  renderMeta(scan);
+  renderStats(scan);
+
+  const container = document.getElementById('deals');
+  if (scan.deals.length === 0) {
+    container.innerHTML = '<p style="color:var(--muted);text-align:center;padding:3rem">Aucune aubaine détectée lors du dernier scan. Revenez plus tard ! 🛫</p>';
+    return;
+  }
+  // trier: confirmées d'abord, puis par baisse décroissante
+  const sorted = [...scan.deals].sort((a, b) => {
+    if (a.confirmed !== b.confirmed) return b.confirmed - a.confirmed;
+    return b.drop_pct - a.drop_pct;
+  });
+  container.innerHTML = sorted.map(renderDeal).join('');
+}
+
+// ======================== LOAD ========================
+// Charge le JSON embarqué (inline) si présent, sinon fetch data/latest-scan.json
+async function loadScan() {
+  if (window.__SCAN_DATA__) return window.__SCAN_DATA__;
+  const resp = await fetch('data/latest-scan.json');
+  return await resp.json();
+}
+
+loadScan().then(scan => {
+  render(scan);
+}).catch(err => {
+  document.getElementById('deals').innerHTML =
+    '<p style="color:var(--red);text-align:center;padding:3rem">Erreur de chargement des données: ' + err.message + '</p>';
+});
+</script>
+
+</body>
+</html>

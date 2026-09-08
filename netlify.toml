@@ -1,0 +1,19 @@
+# Netlify config — flightdeals-web
+# Build: génère dist/index.html avec données embarquées
+# Deploy: sert dist/ comme site statique
+
+[build]
+  command = "python3 build.py"
+  publish = "dist"
+
+# Headers de cache pour le JSON (si jamais on sert aussi le fichier)
+[[headers]]
+  for = "/data/*"
+  [headers.values]
+    Cache-Control = "public, max-age=300"
+
+# Redirect racine -> index.html (Netlify le fait par défaut, explicite pour clarté)
+[[redirects]]
+  from = "/"
+  to = "/index.html"
+  status = 200

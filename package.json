@@ -1,0 +1,11 @@
+{
+  "name": "flightdeals-web",
+  "version": "1.0.0",
+  "description": "Page web statique affichant les aubaines de vols détectées par le pipeline flightdeals. Déploiement Netlify.",
+  "scripts": {
+    "build": "python3 build.py",
+    "serve": "python3 -m http.server 8080 --directory dist"
+  },
+  "keywords": ["flights", "deals", "netlify", "static-site"],
+  "license": "MIT"
+}

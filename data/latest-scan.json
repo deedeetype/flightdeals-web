@@ -1,0 +1,107 @@
+{
+  "started_at": "2026-09-08T15:04:44",
+  "finished_at": "2026-09-08T15:04:44",
+  "providers": [
+    "demo",
+    "demo_gds"
+  ],
+  "routes_scanned": 5,
+  "quotes_seen": 30,
+  "per_provider": {
+    "demo": {
+      "quotes": 15,
+      "errors": []
+    },
+    "demo_gds": {
+      "quotes": 15,
+      "errors": []
+    }
+  },
+  "deals_total": 4,
+  "deals_confirmed": 0,
+  "deals_new": 4,
+  "errors": [],
+  "deals": [
+    {
+      "route": "YUL-LIS",
+      "price": 318.29,
+      "currency": "CAD",
+      "baseline": 657.19,
+      "drop_pct": 0.5157,
+      "z_score": -1.59,
+      "depart_date": "2026-12-21",
+      "return_date": "2026-12-28",
+      "airline": "AC",
+      "sources": [
+        "demo"
+      ],
+      "confirmations": 1,
+      "confirmed": false,
+      "reasons": [
+        "-52% vs médiane 657"
+      ],
+      "deep_link": "https://www.google.com/travel/flights?q=YUL%20LIS"
+    },
+    {
+      "route": "YUL-CDG",
+      "price": 414.16,
+      "currency": "CAD",
+      "baseline": 816.2,
+      "drop_pct": 0.4926,
+      "z_score": -5.25,
+      "depart_date": "2026-10-14",
+      "return_date": "2026-10-28",
+      "airline": "AF",
+      "sources": [
+        "demo"
+      ],
+      "confirmations": 1,
+      "confirmed": false,
+      "reasons": [
+        "-49% vs médiane 816",
+        "z-score robuste -5.3"
+      ],
+      "deep_link": "https://www.google.com/travel/flights?q=YUL%20CDG"
+    },
+    {
+      "route": "YUL-LIS",
+      "price": 371.57,
+      "currency": "CAD",
+      "baseline": 657.19,
+      "drop_pct": 0.4346,
+      "z_score": -1.34,
+      "depart_date": "2026-10-08",
+      "return_date": "2026-10-22",
+      "airline": "LH",
+      "sources": [
+        "demo_gds"
+      ],
+      "confirmations": 1,
+      "confirmed": false,
+      "reasons": [
+        "-43% vs médiane 657"
+      ],
+      "deep_link": "https://www.google.com/travel/flights?q=YUL%20LIS"
+    },
+    {
+      "route": "YUL-BCN",
+      "price": 642.58,
+      "currency": "CAD",
+      "baseline": 695.77,
+      "drop_pct": 0.0764,
+      "z_score": -3.04,
+      "depart_date": "2026-11-07",
+      "return_date": "2026-11-17",
+      "airline": "LH",
+      "sources": [
+        "demo"
+      ],
+      "confirmations": 1,
+      "confirmed": false,
+      "reasons": [
+        "z-score robuste -3.0"
+      ],
+      "deep_link": "https://www.google.com/travel/flights?q=YUL%20BCN"
+    }
+  ]
+}
