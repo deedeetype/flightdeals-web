@@ -183,7 +183,7 @@
 <main>
   <div class="stats-bar" id="stats-bar"></div>
   <div class="section-title">
-    🏷️ Aubaines actives
+    🏷️ <span id="section-label">Aubaines actives</span>
     <span class="count" id="deal-count">0</span>
   </div>
   <div id="deals"></div>
@@ -319,6 +319,12 @@ function render(scan) {
   document.getElementById('deal-count').textContent = scan.deals.length;
   document.getElementById('footer-time').textContent =
     'Dernier scan: ' + scan.finished_at;
+
+  // Change le titre selon le type de deals
+  if (scan.is_top_deals) {
+    document.getElementById('section-label').textContent = 'Meilleurs prix trouvés (en attente d\'historique pour la détection)';
+  }
+
   renderMeta(scan);
   renderStats(scan);
 
