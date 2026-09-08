@@ -1,18 +1,23 @@
 {
-  "started_at": "2026-09-08T23:26:28",
-  "finished_at": "2026-09-08T23:26:29",
+  "started_at": "2026-09-08T23:34:52",
+  "finished_at": "2026-09-08T23:34:54",
   "providers": [
-    "travelpayouts"
+    "travelpayouts",
+    "serpapi"
   ],
   "routes_scanned": 5,
-  "quotes_seen": 58,
+  "quotes_seen": 128,
   "per_provider": {
     "travelpayouts": {
       "quotes": 58,
       "errors": []
+    },
+    "serpapi": {
+      "quotes": 70,
+      "errors": []
     }
   },
-  "deals_total": 2,
+  "deals_total": 1,
   "deals_confirmed": 0,
   "deals_new": 0,
   "errors": [],
@@ -22,9 +27,9 @@
       "route": "YUL-NRT",
       "price": 1018.0,
       "currency": "CAD",
-      "baseline": 1854.0,
-      "drop_pct": 0.4509,
-      "z_score": -2.83,
+      "baseline": 1769.0,
+      "drop_pct": 0.4245,
+      "z_score": -2.01,
       "depart_date": "2027-02-01",
       "return_date": "2027-02-15",
       "airline": "WS",
@@ -34,30 +39,9 @@
       "confirmations": 1,
       "confirmed": false,
       "reasons": [
-        "-45% vs médiane 1854",
-        "z-score robuste -2.8"
+        "-42% vs médiane 1769"
       ],
       "deep_link": "https://www.aviasales.com/search/YUL0102NRT15021?t=WS18014985001801672200002055YULYYCNRT18027162001802789400002060NRTYYCYUL_93f0230ae295d01f4321418e0e14ff49_63978&search_date=08092026&expected_price_uuid=01a0803f-c593-8040-af32-f42a03524ee3&static_fare_key=TY%7CP0%7CH1%7CL1_1_23%7CCH0%7CR0%7CTBC1&itinerary_key=CpclebVSXRd5QPE-86J20g&origin_airports=0,1&destination_airports=0,1&expected_price_source=share&expected_price_currency=cad&expected_price=1018"
-    },
-    {
-      "route": "YUL-NRT",
-      "price": 1200.0,
-      "currency": "CAD",
-      "baseline": 1854.0,
-      "drop_pct": 0.3528,
-      "z_score": -2.22,
-      "depart_date": "2027-01-22",
-      "return_date": "2027-02-06",
-      "airline": "WS",
-      "sources": [
-        "travelpayouts"
-      ],
-      "confirmations": 1,
-      "confirmed": false,
-      "reasons": [
-        "-35% vs médiane 1854"
-      ],
-      "deep_link": "https://www.aviasales.com/search/YUL2201NRT06021?t=WS18006345001800808200002055YULYYCNRT18019296001801960200001350NRTYVRYYCYYZYUL_4608b9380726565b70903a09f2c732f4_75144&search_date=04092026&expected_price_uuid=01a06b01-97df-8040-24e5-70c101b176ac&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=hmfs5gSpj3a-p88bnfNF3Q&origin_airports=0,1&destination_airports=0,1&expected_price_source=share&expected_price_currency=cad&expected_price=1200"
     }
   ]
 }
