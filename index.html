@@ -408,10 +408,6 @@ function render(scan) {
   document.getElementById('footer-time').textContent =
     'Dernier scan : ' + scan.finished_at;
 
-  if (scan.is_top_deals) {
-    document.getElementById('section-label').textContent = "Meilleurs prix trouvés";
-  }
-
   renderMeta(scan);
   renderStats(scan);
 
@@ -420,7 +416,8 @@ function render(scan) {
     container.innerHTML = `
       <div class="empty-state" style="grid-column:1/-1">
         <div class="emoji">🛫</div>
-        <p>Aucune aubaine détectée lors du dernier scan.<br>Revenez plus tard !</p>
+        <p>Aucune aubaine exceptionnelle en ce moment.<br>
+        On ne publie que des offres réellement remarquables (≥40% de baisse) — revenez plus tard !</p>
       </div>`;
     return;
   }
