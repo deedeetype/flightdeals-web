@@ -1,14 +1,14 @@
 {
-  "started_at": "2026-09-09T01:54:01",
-  "finished_at": "2026-09-09T01:54:46",
+  "started_at": "2026-09-09T02:00:16",
+  "finished_at": "2026-09-09T02:01:09",
   "providers": [
     "travelpayouts"
   ],
-  "routes_scanned": 48,
-  "quotes_seen": 519,
+  "routes_scanned": 58,
+  "quotes_seen": 564,
   "per_provider": {
     "travelpayouts": {
-      "quotes": 519,
+      "quotes": 564,
       "errors": []
     }
   },
@@ -19,6 +19,213 @@
   "is_top_deals": true,
   "rejected_count": 0,
   "deals": [
+    {
+      "route": "YUL-JFK",
+      "price": 486.0,
+      "currency": "CAD",
+      "baseline": 1579.0,
+      "drop_pct": 0.6922,
+      "z_score": 0.0,
+      "depart_date": "2026-10-15",
+      "return_date": "2026-10-19",
+      "airline": "Delta",
+      "sources": [
+        "travelpayouts"
+      ],
+      "confirmations": 1,
+      "confirmed": false,
+      "verified": true,
+      "verified_price": 486.0,
+      "reasons": [
+        "Meilleur prix trouvé pour YUL-JFK",
+        "✅ prix vérifié en direct (serpapi)"
+      ],
+      "deep_link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=CAD&tfs=CBwQAhoeEgoyMDI2LTEwLTE1agcIARIDWVVMcgcIARIDSkZLGh4SCjIwMjYtMTAtMTlqBwgBEgNKRktyBwgBEgNZVUxAAUgBcAGYAQE&tfu=EgIIAQ"
+    },
+    {
+      "route": "YYZ-JFK",
+      "price": 435.0,
+      "currency": "CAD",
+      "baseline": 1031.0,
+      "drop_pct": 0.5781,
+      "z_score": 0.0,
+      "depart_date": "2026-09-19",
+      "return_date": "2026-09-21",
+      "airline": "Delta",
+      "sources": [
+        "travelpayouts"
+      ],
+      "confirmations": 1,
+      "confirmed": false,
+      "verified": true,
+      "verified_price": 435.0,
+      "reasons": [
+        "Meilleur prix trouvé pour YYZ-JFK",
+        "✅ prix vérifié en direct (serpapi)"
+      ],
+      "deep_link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=CAD&tfs=CBwQAhoeEgoyMDI2LTA5LTE5agcIARIDWVlacgcIARIDSkZLGh4SCjIwMjYtMDktMjFqBwgBEgNKRktyBwgBEgNZWVpAAUgBcAGYAQE&tfu=EgIIAQ"
+    },
+    {
+      "route": "YYZ-DUB",
+      "price": 746.0,
+      "currency": "CAD",
+      "baseline": 1700.0,
+      "drop_pct": 0.5612,
+      "z_score": 0.0,
+      "depart_date": "2026-12-30",
+      "return_date": "2027-01-11",
+      "airline": "British Airways",
+      "sources": [
+        "travelpayouts"
+      ],
+      "confirmations": 1,
+      "confirmed": false,
+      "verified": true,
+      "verified_price": 746.0,
+      "reasons": [
+        "Meilleur prix trouvé pour YYZ-DUB",
+        "✅ prix vérifié en direct (serpapi)"
+      ],
+      "deep_link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=CAD&tfs=CBwQAhoeEgoyMDI2LTEyLTMwagcIARIDWVlacgcIARIDRFVCGh4SCjIwMjctMDEtMTFqBwgBEgNEVUJyBwgBEgNZWVpAAUgBcAGYAQE&tfu=EgIIAQ"
+    },
+    {
+      "route": "YYZ-PUJ",
+      "price": 590.0,
+      "currency": "CAD",
+      "baseline": 1338.0,
+      "drop_pct": 0.559,
+      "z_score": 0.0,
+      "depart_date": "2027-01-04",
+      "return_date": "2027-01-09",
+      "airline": "Arajet",
+      "sources": [
+        "travelpayouts"
+      ],
+      "confirmations": 1,
+      "confirmed": false,
+      "verified": true,
+      "verified_price": 590.0,
+      "reasons": [
+        "Meilleur prix trouvé pour YYZ-PUJ",
+        "✅ prix vérifié en direct (serpapi)"
+      ],
+      "deep_link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=CAD&tfs=CBwQAhoeEgoyMDI3LTAxLTA0agcIARIDWVlacgcIARIDUFVKGh4SCjIwMjctMDEtMDlqBwgBEgNQVUpyBwgBEgNZWVpAAUgBcAGYAQE&tfu=EgIIAQ"
+    },
+    {
+      "route": "YUL-NRT",
+      "price": 1034.0,
+      "currency": "CAD",
+      "baseline": 1769.0,
+      "drop_pct": 0.4155,
+      "z_score": 0.0,
+      "depart_date": "2027-02-01",
+      "return_date": "2027-02-15",
+      "airline": "WestJet",
+      "sources": [
+        "travelpayouts"
+      ],
+      "confirmations": 1,
+      "confirmed": false,
+      "verified": true,
+      "verified_price": 1034.0,
+      "reasons": [
+        "Meilleur prix trouvé pour YUL-NRT",
+        "✅ prix vérifié en direct (serpapi)"
+      ],
+      "deep_link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=CAD&tfs=CBwQAhoeEgoyMDI3LTAyLTAxagcIARIDWVVMcgcIARIDTlJUGh4SCjIwMjctMDItMTVqBwgBEgNOUlRyBwgBEgNZVUxAAUgBcAGYAQE&tfu=EgIIAQ"
+    },
+    {
+      "route": "YYZ-JFK",
+      "price": 488.0,
+      "currency": "CAD",
+      "baseline": 816.0,
+      "drop_pct": 0.402,
+      "z_score": 0.0,
+      "depart_date": "2026-09-10",
+      "return_date": "2026-09-16",
+      "airline": "Delta",
+      "sources": [
+        "travelpayouts"
+      ],
+      "confirmations": 1,
+      "confirmed": false,
+      "verified": true,
+      "verified_price": 488.0,
+      "reasons": [
+        "Meilleur prix trouvé pour YYZ-JFK",
+        "✅ prix vérifié en direct (serpapi)"
+      ],
+      "deep_link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=CAD&tfs=CBwQAhoeEgoyMDI2LTA5LTEwagcIARIDWVlacgcIARIDSkZLGh4SCjIwMjYtMDktMTZqBwgBEgNKRktyBwgBEgNZWVpAAUgBcAGYAQE&tfu=EgIIAQ"
+    },
+    {
+      "route": "YYZ-PUJ",
+      "price": 395.0,
+      "currency": "CAD",
+      "baseline": 658.0,
+      "drop_pct": 0.3997,
+      "z_score": 0.0,
+      "depart_date": "2026-10-31",
+      "return_date": "2026-11-07",
+      "airline": "Flair Airlines",
+      "sources": [
+        "travelpayouts"
+      ],
+      "confirmations": 1,
+      "confirmed": false,
+      "verified": true,
+      "verified_price": 395.0,
+      "reasons": [
+        "Meilleur prix trouvé pour YYZ-PUJ",
+        "✅ prix vérifié en direct (serpapi)"
+      ],
+      "deep_link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=CAD&tfs=CBwQAhoeEgoyMDI2LTEwLTMxagcIARIDWVlacgcIARIDUFVKGh4SCjIwMjYtMTEtMDdqBwgBEgNQVUpyBwgBEgNZWVpAAUgBcAGYAQE&tfu=EgIIAQ"
+    },
+    {
+      "route": "YUL-LAS",
+      "price": 430.0,
+      "currency": "CAD",
+      "baseline": 598.0,
+      "drop_pct": 0.2809,
+      "z_score": 0.0,
+      "depart_date": "2026-11-03",
+      "return_date": "2026-11-10",
+      "airline": "WestJet",
+      "sources": [
+        "travelpayouts"
+      ],
+      "confirmations": 1,
+      "confirmed": false,
+      "verified": true,
+      "verified_price": 430.0,
+      "reasons": [
+        "Meilleur prix trouvé pour YUL-LAS",
+        "✅ prix vérifié en direct (serpapi)"
+      ],
+      "deep_link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=CAD&tfs=CBwQAhoeEgoyMDI2LTExLTAzagcIARIDWVVMcgcIARIDTEFTGh4SCjIwMjYtMTEtMTBqBwgBEgNMQVNyBwgBEgNZVUxAAUgBcAGYAQE&tfu=EgIIAQ"
+    },
+    {
+      "route": "YUL-PUJ",
+      "price": 715.0,
+      "currency": "CAD",
+      "baseline": 966.0,
+      "drop_pct": 0.2598,
+      "z_score": 0.0,
+      "depart_date": "2026-12-19",
+      "return_date": "2026-12-26",
+      "airline": "Air Canada",
+      "sources": [
+        "travelpayouts"
+      ],
+      "confirmations": 1,
+      "confirmed": false,
+      "verified": true,
+      "verified_price": 715.0,
+      "reasons": [
+        "Meilleur prix trouvé pour YUL-PUJ",
+        "✅ prix vérifié en direct (serpapi)"
+      ],
+      "deep_link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=CAD&tfs=CBwQAhoeEgoyMDI2LTEyLTE5agcIARIDWVVMcgcIARIDUFVKGh4SCjIwMjYtMTItMjZqBwgBEgNQVUpyBwgBEgNZVUxAAUgBcAGYAQE&tfu=EgIIAQ"
+    },
     {
       "route": "YYZ-NAS",
       "price": 362.0,
@@ -43,257 +250,50 @@
       "deep_link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=CAD&tfs=CBwQAhoeEgoyMDI2LTEwLTIwagcIARIDWVlacgcIARIDTkFTGh4SCjIwMjYtMTAtMjNqBwgBEgNOQVNyBwgBEgNZWVpAAUgBcAGYAQE&tfu=EgIIAQ"
     },
     {
-      "route": "YYZ-LAS",
-      "price": 328.0,
+      "route": "YYZ-FCO",
+      "price": 1301.0,
       "currency": "CAD",
-      "baseline": 346.0,
-      "drop_pct": 0.052,
+      "baseline": 1695.0,
+      "drop_pct": 0.2324,
       "z_score": 0.0,
-      "depart_date": "2026-11-29",
-      "return_date": "2026-12-04",
-      "airline": "Air Canada",
+      "depart_date": "2026-12-21",
+      "return_date": "2027-01-05",
+      "airline": "Tap Air Portugal",
       "sources": [
         "travelpayouts"
       ],
       "confirmations": 1,
       "confirmed": false,
       "verified": true,
-      "verified_price": 328.0,
+      "verified_price": 1301.0,
       "reasons": [
-        "Meilleur prix trouvé pour YYZ-LAS",
+        "Meilleur prix trouvé pour YYZ-FCO",
         "✅ prix vérifié en direct (serpapi)"
       ],
-      "deep_link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=CAD&tfs=CBwQAhoeEgoyMDI2LTExLTI5agcIARIDWVlacgcIARIDTEFTGh4SCjIwMjYtMTItMDRqBwgBEgNMQVNyBwgBEgNZWVpAAUgBcAGYAQE&tfu=EgIIAQ"
+      "deep_link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=CAD&tfs=CBwQAhoeEgoyMDI2LTEyLTIxagcIARIDWVlacgcIARIDRkNPGh4SCjIwMjctMDEtMDVqBwgBEgNGQ09yBwgBEgNZWVpAAUgBcAGYAQE&tfu=EgIIAQ"
     },
     {
-      "route": "YUL-MIA",
-      "price": 426.0,
+      "route": "YUL-LHR",
+      "price": 1004.0,
       "currency": "CAD",
-      "baseline": 441.0,
-      "drop_pct": 0.034,
+      "baseline": 1115.0,
+      "drop_pct": 0.0996,
       "z_score": 0.0,
-      "depart_date": "2026-11-02",
-      "return_date": "2026-11-10",
-      "airline": "Air Canada",
+      "depart_date": "2026-10-09",
+      "return_date": "2026-10-11",
+      "airline": "WestJet",
       "sources": [
         "travelpayouts"
       ],
       "confirmations": 1,
       "confirmed": false,
       "verified": true,
-      "verified_price": 426.0,
+      "verified_price": 1004.0,
       "reasons": [
-        "Meilleur prix trouvé pour YUL-MIA",
+        "Meilleur prix trouvé pour YUL-LHR",
         "✅ prix vérifié en direct (serpapi)"
       ],
-      "deep_link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=CAD&tfs=CBwQAhoeEgoyMDI2LTExLTAyagcIARIDWVVMcgcIARIDTUlBGh4SCjIwMjYtMTEtMTBqBwgBEgNNSUFyBwgBEgNZVUxAAUgBcAGYAQE&tfu=EgIIAQ"
-    },
-    {
-      "route": "YYZ-MIA",
-      "price": 395.0,
-      "currency": "CAD",
-      "baseline": 356.0,
-      "drop_pct": 0.0,
-      "z_score": 0.0,
-      "depart_date": "2027-01-11",
-      "return_date": "2027-01-18",
-      "airline": "Air Canada",
-      "sources": [
-        "travelpayouts"
-      ],
-      "confirmations": 1,
-      "confirmed": false,
-      "verified": true,
-      "verified_price": 395.0,
-      "reasons": [
-        "Meilleur prix trouvé pour YYZ-MIA",
-        "✅ prix vérifié en direct (serpapi)"
-      ],
-      "deep_link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=CAD&tfs=CBwQAhoeEgoyMDI3LTAxLTExagcIARIDWVlacgcIARIDTUlBGh4SCjIwMjctMDEtMThqBwgBEgNNSUFyBwgBEgNZWVpAAUgBcAGYAQE&tfu=EgIIAQ"
-    },
-    {
-      "route": "YYZ-MIA",
-      "price": 458.0,
-      "currency": "CAD",
-      "baseline": 333.0,
-      "drop_pct": 0.0,
-      "z_score": 0.0,
-      "depart_date": "2026-09-26",
-      "return_date": "2026-10-03",
-      "airline": "Delta",
-      "sources": [
-        "travelpayouts"
-      ],
-      "confirmations": 1,
-      "confirmed": false,
-      "verified": true,
-      "verified_price": 458.0,
-      "reasons": [
-        "Meilleur prix trouvé pour YYZ-MIA",
-        "✅ prix vérifié en direct (serpapi)"
-      ],
-      "deep_link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=CAD&tfs=CBwQAhoeEgoyMDI2LTA5LTI2agcIARIDWVlacgcIARIDTUlBGh4SCjIwMjYtMTAtMDNqBwgBEgNNSUFyBwgBEgNZWVpAAUgBcAGYAQE&tfu=EgIIAQ"
-    },
-    {
-      "route": "YYZ-CUN",
-      "price": 421.0,
-      "currency": "CAD",
-      "baseline": 405.0,
-      "drop_pct": 0.0,
-      "z_score": 0.0,
-      "depart_date": "2026-11-06",
-      "return_date": "2026-11-14",
-      "airline": "Flair Airlines",
-      "sources": [
-        "travelpayouts"
-      ],
-      "confirmations": 1,
-      "confirmed": false,
-      "verified": true,
-      "verified_price": 421.0,
-      "reasons": [
-        "Meilleur prix trouvé pour YYZ-CUN",
-        "✅ prix vérifié en direct (serpapi)"
-      ],
-      "deep_link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=CAD&tfs=CBwQAhoeEgoyMDI2LTExLTA2agcIARIDWVlacgcIARIDQ1VOGh4SCjIwMjYtMTEtMTRqBwgBEgNDVU5yBwgBEgNZWVpAAUgBcAGYAQE&tfu=EgIIAQ"
-    },
-    {
-      "route": "YYZ-NAS",
-      "price": 362.0,
-      "currency": "CAD",
-      "baseline": 343.0,
-      "drop_pct": 0.0,
-      "z_score": 0.0,
-      "depart_date": "2026-11-09",
-      "return_date": "2026-11-22",
-      "airline": "Porter Airlines",
-      "sources": [
-        "travelpayouts"
-      ],
-      "confirmations": 1,
-      "confirmed": false,
-      "verified": true,
-      "verified_price": 362.0,
-      "reasons": [
-        "Meilleur prix trouvé pour YYZ-NAS",
-        "✅ prix vérifié en direct (serpapi)"
-      ],
-      "deep_link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=CAD&tfs=CBwQAhoeEgoyMDI2LTExLTA5agcIARIDWVlacgcIARIDTkFTGh4SCjIwMjYtMTEtMjJqBwgBEgNOQVNyBwgBEgNZWVpAAUgBcAGYAQE&tfu=EgIIAQ"
-    },
-    {
-      "route": "YYZ-MIA",
-      "price": 395.0,
-      "currency": "CAD",
-      "baseline": 348.0,
-      "drop_pct": 0.0,
-      "z_score": 0.0,
-      "depart_date": "2027-01-12",
-      "return_date": "2027-02-02",
-      "airline": "Air Canada",
-      "sources": [
-        "travelpayouts"
-      ],
-      "confirmations": 1,
-      "confirmed": false,
-      "verified": true,
-      "verified_price": 395.0,
-      "reasons": [
-        "Meilleur prix trouvé pour YYZ-MIA",
-        "✅ prix vérifié en direct (serpapi)"
-      ],
-      "deep_link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=CAD&tfs=CBwQAhoeEgoyMDI3LTAxLTEyagcIARIDWVlacgcIARIDTUlBGh4SCjIwMjctMDItMDJqBwgBEgNNSUFyBwgBEgNZWVpAAUgBcAGYAQE&tfu=EgIIAQ"
-    },
-    {
-      "route": "YYZ-LAS",
-      "price": 408.0,
-      "currency": "CAD",
-      "baseline": 384.0,
-      "drop_pct": 0.0,
-      "z_score": 0.0,
-      "depart_date": "2026-10-26",
-      "return_date": "2026-11-01",
-      "airline": "American",
-      "sources": [
-        "travelpayouts"
-      ],
-      "confirmations": 1,
-      "confirmed": false,
-      "verified": true,
-      "verified_price": 408.0,
-      "reasons": [
-        "Meilleur prix trouvé pour YYZ-LAS",
-        "✅ prix vérifié en direct (serpapi)"
-      ],
-      "deep_link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=CAD&tfs=CBwQAhoeEgoyMDI2LTEwLTI2agcIARIDWVlacgcIARIDTEFTGh4SCjIwMjYtMTEtMDFqBwgBEgNMQVNyBwgBEgNZWVpAAUgBcAGYAQE&tfu=EgIIAQ"
-    },
-    {
-      "route": "YYZ-MIA",
-      "price": 395.0,
-      "currency": "CAD",
-      "baseline": 326.0,
-      "drop_pct": 0.0,
-      "z_score": 0.0,
-      "depart_date": "2027-01-13",
-      "return_date": "2027-01-20",
-      "airline": "Air Canada",
-      "sources": [
-        "travelpayouts"
-      ],
-      "confirmations": 1,
-      "confirmed": false,
-      "verified": true,
-      "verified_price": 395.0,
-      "reasons": [
-        "Meilleur prix trouvé pour YYZ-MIA",
-        "✅ prix vérifié en direct (serpapi)"
-      ],
-      "deep_link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=CAD&tfs=CBwQAhoeEgoyMDI3LTAxLTEzagcIARIDWVlacgcIARIDTUlBGh4SCjIwMjctMDEtMjBqBwgBEgNNSUFyBwgBEgNZWVpAAUgBcAGYAQE&tfu=EgIIAQ"
-    },
-    {
-      "route": "YYZ-CUN",
-      "price": 413.0,
-      "currency": "CAD",
-      "baseline": 405.0,
-      "drop_pct": 0.0,
-      "z_score": 0.0,
-      "depart_date": "2026-11-10",
-      "return_date": "2026-11-17",
-      "airline": "Porter Airlines",
-      "sources": [
-        "travelpayouts"
-      ],
-      "confirmations": 1,
-      "confirmed": false,
-      "verified": true,
-      "verified_price": 413.0,
-      "reasons": [
-        "Meilleur prix trouvé pour YYZ-CUN",
-        "✅ prix vérifié en direct (serpapi)"
-      ],
-      "deep_link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=CAD&tfs=CBwQAhoeEgoyMDI2LTExLTEwagcIARIDWVlacgcIARIDQ1VOGh4SCjIwMjYtMTEtMTdqBwgBEgNDVU5yBwgBEgNZWVpAAUgBcAGYAQE&tfu=EgIIAQ"
-    },
-    {
-      "route": "YYZ-MIA",
-      "price": 584.0,
-      "currency": "CAD",
-      "baseline": 358.0,
-      "drop_pct": 0.0,
-      "z_score": 0.0,
-      "depart_date": "2026-09-11",
-      "return_date": "2026-09-27",
-      "airline": "American",
-      "sources": [
-        "travelpayouts"
-      ],
-      "confirmations": 1,
-      "confirmed": false,
-      "verified": true,
-      "verified_price": 584.0,
-      "reasons": [
-        "Meilleur prix trouvé pour YYZ-MIA",
-        "✅ prix vérifié en direct (serpapi)"
-      ],
-      "deep_link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=CAD&tfs=CBwQAhoeEgoyMDI2LTA5LTExagcIARIDWVlacgcIARIDTUlBGh4SCjIwMjYtMDktMjdqBwgBEgNNSUFyBwgBEgNZWVpAAUgBcAGYAQE&tfu=EgIIAQ"
+      "deep_link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=CAD&tfs=CBwQAhoeEgoyMDI2LTEwLTA5agcIARIDWVVMcgcIARIDTEhSGh4SCjIwMjYtMTAtMTFqBwgBEgNMSFJyBwgBEgNZVUxAAUgBcAGYAQE&tfu=EgIIAQ"
     }
   ]
 }
