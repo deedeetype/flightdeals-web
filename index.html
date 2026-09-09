@@ -240,9 +240,10 @@ function renderMeta(scan) {
 function renderStats(scan) {
   const el = document.getElementById('stats-bar');
   const savings = scan.deals.reduce((sum, d) => sum + (d.baseline - d.price), 0);
+  const verifiedCount = scan.deals.filter(d => d.verified).length;
   el.innerHTML = `
     <div class="stat-box"><div class="num">${scan.deals.length}</div><div class="lbl">Aubaines détectées</div></div>
-    <div class="stat-box"><div class="num">${scan.deals_confirmed}</div><div class="lbl">Confirmées multi-source</div></div>
+    <div class="stat-box"><div class="num" style="color:var(--green)">${verifiedCount}</div><div class="lbl">✅ Vérifiées en direct</div></div>
     <div class="stat-box"><div class="num" style="color:var(--green)">${fmtPrice(savings)}</div><div class="lbl">Économies potentielles</div></div>
     <div class="stat-box"><div class="num">${scan.deals.length > 0 ? Math.round(scan.deals.reduce((s,d)=>s+d.drop_pct,0)/scan.deals.length*100) : 0}%</div><div class="lbl">Baisse moyenne</div></div>
   `;
@@ -255,15 +256,20 @@ function renderDeal(deal) {
   const savings = deal.baseline - deal.price;
   const barWidth = Math.min(100, (deal.price / deal.baseline) * 100);
   const imgUrl = `https://picsum.photos/seed/${meta.seed}/560/440`;
-  const confirmedBadge = deal.confirmed
-    ? `<div class="badge-top confirmed">✅ Confirmé · ${deal.confirmations} sources</div>`
-    : `<div class="badge-top">🔍 ${deal.sources.join(' + ')}</div>`;
+  let topBadge;
+  if (deal.verified) {
+    topBadge = `<div class="badge-top confirmed">✅ Prix vérifié en direct</div>`;
+  } else if (deal.confirmed) {
+    topBadge = `<div class="badge-top confirmed">✅ Confirmé · ${deal.confirmations} sources</div>`;
+  } else {
+    topBadge = `<div class="badge-top">⚠ Non vérifié (à confirmer avant achat)</div>`;
+  }
 
   return `
   <div class="deal-card">
     <div class="deal-img">
       <img src="${imgUrl}" alt="${meta.city}" loading="lazy">
-      ${confirmedBadge}
+      ${topBadge}
       <div class="city-name">${meta.emoji} ${meta.city}<br><small>${deal.route} · ${meta.country}</small></div>
     </div>
     <div class="deal-body">
@@ -273,6 +279,7 @@ function renderDeal(deal) {
         <span class="price-was">${fmtPrice(deal.baseline)}</span>
         <span class="price-save">−${dropPct}%</span>
       </div>
+      ${deal.verified ? '<div style="color:var(--green);font-size:0.8rem;font-weight:600;margin-top:-4px">✅ Prix confirmé par recherche en direct (Google Flights) au moment du scan</div>' : ''}
 
       <div class="bar-wrap">
         <div class="bar-label">
@@ -304,7 +311,8 @@ function renderDeal(deal) {
       </div>
 
       <div class="sources">
-        ${deal.sources.map(s => `<span class="source-tag ${deal.confirmed ? 'verified' : ''}">${s}</span>`).join('')}
+        ${deal.sources.map(s => `<span class="source-tag ${deal.verified ? 'verified' : ''}">${s}</span>`).join('')}
+        ${deal.verified ? '<span class="source-tag verified">serpapi (vérif)</span>' : ''}
       </div>
 
       <a href="${deal.deep_link}" target="_blank" rel="noopener" class="cta">

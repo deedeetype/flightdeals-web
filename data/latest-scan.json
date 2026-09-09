@@ -1,47 +1,139 @@
 {
-  "started_at": "2026-09-08T23:34:52",
-  "finished_at": "2026-09-08T23:34:54",
+  "started_at": "2026-09-09T00:24:09",
+  "finished_at": "2026-09-09T00:24:11",
   "providers": [
-    "travelpayouts",
-    "serpapi"
+    "travelpayouts"
   ],
-  "routes_scanned": 5,
-  "quotes_seen": 128,
+  "routes_scanned": 15,
+  "quotes_seen": 150,
   "per_provider": {
     "travelpayouts": {
-      "quotes": 58,
-      "errors": []
-    },
-    "serpapi": {
-      "quotes": 70,
+      "quotes": 150,
       "errors": []
     }
   },
-  "deals_total": 1,
+  "deals_total": 5,
   "deals_confirmed": 0,
   "deals_new": 0,
   "errors": [],
   "is_top_deals": false,
+  "rejected_count": 0,
   "deals": [
     {
-      "route": "YUL-NRT",
-      "price": 1018.0,
+      "route": "YUL-PUJ",
+      "price": 486.0,
       "currency": "CAD",
-      "baseline": 1769.0,
-      "drop_pct": 0.4245,
-      "z_score": -2.01,
-      "depart_date": "2027-02-01",
-      "return_date": "2027-02-15",
-      "airline": "WS",
+      "baseline": 917.0,
+      "drop_pct": 0.47,
+      "z_score": -1.4,
+      "depart_date": "2026-10-14",
+      "return_date": "2026-10-22",
+      "airline": "Arajet",
       "sources": [
         "travelpayouts"
       ],
       "confirmations": 1,
       "confirmed": false,
+      "verified": true,
+      "verified_price": 486.0,
       "reasons": [
-        "-42% vs médiane 1769"
+        "-47% vs médiane 917",
+        "✅ vérifié en direct: 486 CAD (serpapi)"
       ],
-      "deep_link": "https://www.aviasales.com/search/YUL0102NRT15021?t=WS18014985001801672200002055YULYYCNRT18027162001802789400002060NRTYYCYUL_93f0230ae295d01f4321418e0e14ff49_63978&search_date=08092026&expected_price_uuid=01a0803f-c593-8040-af32-f42a03524ee3&static_fare_key=TY%7CP0%7CH1%7CL1_1_23%7CCH0%7CR0%7CTBC1&itinerary_key=CpclebVSXRd5QPE-86J20g&origin_airports=0,1&destination_airports=0,1&expected_price_source=share&expected_price_currency=cad&expected_price=1018"
+      "deep_link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=CAD&tfs=CBwQAhoeEgoyMDI2LTEwLTE0agcIARIDWVVMcgcIARIDUFVKGh4SCjIwMjYtMTAtMjJqBwgBEgNQVUpyBwgBEgNZVUxAAUgBcAGYAQE&tfu=EgIIAQ"
+    },
+    {
+      "route": "YUL-NRT",
+      "price": 1034.0,
+      "currency": "CAD",
+      "baseline": 1854.0,
+      "drop_pct": 0.4423,
+      "z_score": -2.79,
+      "depart_date": "2027-02-01",
+      "return_date": "2027-02-15",
+      "airline": "WestJet",
+      "sources": [
+        "travelpayouts"
+      ],
+      "confirmations": 1,
+      "confirmed": false,
+      "verified": true,
+      "verified_price": 1034.0,
+      "reasons": [
+        "-44% vs médiane 1854",
+        "z-score robuste -2.8",
+        "✅ vérifié en direct: 1034 CAD (serpapi)"
+      ],
+      "deep_link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=CAD&tfs=CBwQAhoeEgoyMDI3LTAyLTAxagcIARIDWVVMcgcIARIDTlJUGh4SCjIwMjctMDItMTVqBwgBEgNOUlRyBwgBEgNZVUxAAUgBcAGYAQE&tfu=EgIIAQ"
+    },
+    {
+      "route": "YUL-PUJ",
+      "price": 518.0,
+      "currency": "CAD",
+      "baseline": 917.0,
+      "drop_pct": 0.4351,
+      "z_score": -1.38,
+      "depart_date": "2026-11-29",
+      "return_date": "2026-12-06",
+      "airline": "Air Canada",
+      "sources": [
+        "travelpayouts"
+      ],
+      "confirmations": 1,
+      "confirmed": false,
+      "verified": true,
+      "verified_price": 518.0,
+      "reasons": [
+        "-46% vs médiane 917",
+        "✅ vérifié en direct: 518 CAD (serpapi)"
+      ],
+      "deep_link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=CAD&tfs=CBwQAhoeEgoyMDI2LTExLTI5agcIARIDWVVMcgcIARIDUFVKGh4SCjIwMjYtMTItMDZqBwgBEgNQVUpyBwgBEgNZVUxAAUgBcAGYAQE&tfu=EgIIAQ"
+    },
+    {
+      "route": "YUL-NRT",
+      "price": 1303.0,
+      "currency": "CAD",
+      "baseline": 1854.0,
+      "drop_pct": 0.2972,
+      "z_score": -2.22,
+      "depart_date": "2027-01-22",
+      "return_date": "2027-02-06",
+      "airline": "WestJet",
+      "sources": [
+        "travelpayouts"
+      ],
+      "confirmations": 1,
+      "confirmed": false,
+      "verified": true,
+      "verified_price": 1303.0,
+      "reasons": [
+        "-35% vs médiane 1854",
+        "✅ vérifié en direct: 1303 CAD (serpapi)"
+      ],
+      "deep_link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=CAD&tfs=CBwQAhoeEgoyMDI3LTAxLTIyagcIARIDWVVMcgcIARIDTlJUGh4SCjIwMjctMDItMDZqBwgBEgNOUlRyBwgBEgNZVUxAAUgBcAGYAQE&tfu=EgIIAQ"
+    },
+    {
+      "route": "YUL-PUJ",
+      "price": 686.0,
+      "currency": "CAD",
+      "baseline": 917.0,
+      "drop_pct": 0.2519,
+      "z_score": -1.22,
+      "depart_date": "2026-11-07",
+      "return_date": "2026-11-14",
+      "airline": "Air Transat",
+      "sources": [
+        "travelpayouts"
+      ],
+      "confirmations": 1,
+      "confirmed": false,
+      "verified": true,
+      "verified_price": 686.0,
+      "reasons": [
+        "-41% vs médiane 917",
+        "✅ vérifié en direct: 686 CAD (serpapi)"
+      ],
+      "deep_link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=CAD&tfs=CBwQAhoeEgoyMDI2LTExLTA3agcIARIDWVVMcgcIARIDUFVKGh4SCjIwMjYtMTEtMTRqBwgBEgNQVUpyBwgBEgNZVUxAAUgBcAGYAQE&tfu=EgIIAQ"
     }
   ]
 }
