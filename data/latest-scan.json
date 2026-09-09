@@ -1,14 +1,14 @@
 {
-  "started_at": "2026-09-09T01:40:23",
-  "finished_at": "2026-09-09T01:40:26",
+  "started_at": "2026-09-09T01:45:15",
+  "finished_at": "2026-09-09T01:45:30",
   "providers": [
     "travelpayouts"
   ],
-  "routes_scanned": 15,
-  "quotes_seen": 149,
+  "routes_scanned": 48,
+  "quotes_seen": 520,
   "per_provider": {
     "travelpayouts": {
-      "quotes": 149,
+      "quotes": 520,
       "errors": []
     }
   },
@@ -19,6 +19,28 @@
   "is_top_deals": true,
   "rejected_count": 0,
   "deals": [
+    {
+      "route": "YYZ-NAS",
+      "price": 335.0,
+      "currency": "CAD",
+      "baseline": 475.0,
+      "drop_pct": 0.2947,
+      "z_score": 0.0,
+      "depart_date": "2026-10-20",
+      "return_date": "2026-10-23",
+      "airline": "WS",
+      "sources": [
+        "travelpayouts"
+      ],
+      "confirmations": 1,
+      "confirmed": false,
+      "verified": false,
+      "verified_price": null,
+      "reasons": [
+        "Meilleur prix trouvé pour YYZ-NAS"
+      ],
+      "deep_link": "https://www.aviasales.com/search/YYZ2010NAS23101?t=WS17924823001792494600000205YYZNAS17927568001792769400000210NASYYZ_bacfbe2d1d9452bff0300a0539a08d12_20913&search_date=08092026&expected_price_uuid=01a07e88-b6a3-8040-a70c-e0a2df932193&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=dZkKYrXkmJ-x_D0H3ufmUg&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=cad&expected_price=335"
+    },
     {
       "route": "YUL-MIA",
       "price": 339.0,
@@ -42,15 +64,15 @@
       "deep_link": "https://www.aviasales.com/search/YUL0211MIA10111?t=AC17936070001793621760000246YULMIA17942976001794310320000212MIAYUL_103d805e4ff6f78723f0b0df10c90b96_21359&search_date=03092026&expected_price_uuid=01a0674c-9e91-8040-6631-57f09856e6b7&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=BmZSBsTg5-_rTcsO6QPQTg&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=cad&expected_price=339"
     },
     {
-      "route": "YUL-PUJ",
-      "price": 486.0,
+      "route": "YYZ-CUN",
+      "price": 335.0,
       "currency": "CAD",
-      "baseline": 542.0,
-      "drop_pct": 0.1033,
+      "baseline": 405.0,
+      "drop_pct": 0.1728,
       "z_score": 0.0,
-      "depart_date": "2026-10-14",
-      "return_date": "2026-10-22",
-      "airline": "DM",
+      "depart_date": "2026-11-06",
+      "return_date": "2026-11-14",
+      "airline": "WS",
       "sources": [
         "travelpayouts"
       ],
@@ -59,20 +81,130 @@
       "verified": false,
       "verified_price": null,
       "reasons": [
-        "Meilleur prix trouvé pour YUL-PUJ"
+        "Meilleur prix trouvé pour YYZ-CUN"
       ],
-      "deep_link": "https://www.aviasales.com/search/YUL1410PUJ22101?t=DM17919612001791978000000280YULPUJ17926977001792714800000285PUJYUL_09bfc45186ccba4dafc462b6b35bbb2f_30276&search_date=08092026&expected_price_uuid=01a0829b-b09d-8040-66d7-6362e7d52b15&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=BU0g287F9f-a2A0h-WHJhw&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=cad&expected_price=486"
+      "deep_link": "https://www.aviasales.com/search/YYZ0611CUN14111?t=WS17940036001794063300000995YYZYEGCUN17946939001794708600000245CUNYYZ_1d976a2364776e1d0da8035bd33a5227_20980&search_date=07092026&expected_price_uuid=01a079d2-a913-8040-adfb-7c98320cf948&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=WUr631VYYkkQZLCfueUYdw&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=cad&expected_price=335"
     },
     {
-      "route": "YUL-PUJ",
-      "price": 491.0,
+      "route": "YYZ-CUN",
+      "price": 358.0,
       "currency": "CAD",
-      "baseline": 542.0,
-      "drop_pct": 0.0941,
+      "baseline": 405.0,
+      "drop_pct": 0.116,
+      "z_score": 0.0,
+      "depart_date": "2026-11-10",
+      "return_date": "2026-11-17",
+      "airline": "WS",
+      "sources": [
+        "travelpayouts"
+      ],
+      "confirmations": 1,
+      "confirmed": false,
+      "verified": false,
+      "verified_price": null,
+      "reasons": [
+        "Meilleur prix trouvé pour YYZ-CUN"
+      ],
+      "deep_link": "https://www.aviasales.com/search/YYZ1011CUN17111?t=WS17942922001794308400000270YYZCUN17949168001794931500000245CUNYYZ_7ea714f01b0cbc003245568111a28f83_22321&search_date=09092026&expected_price_uuid=01a083c1-67c3-8030-e8eb-c128ab73b841&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=rf04ouCIx0jzyd_nysDEVQ&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=cad&expected_price=358"
+    },
+    {
+      "route": "YYZ-LAS",
+      "price": 350.0,
+      "currency": "CAD",
+      "baseline": 384.0,
+      "drop_pct": 0.0885,
+      "z_score": 0.0,
+      "depart_date": "2026-10-26",
+      "return_date": "2026-11-01",
+      "airline": "WS",
+      "sources": [
+        "travelpayouts"
+      ],
+      "confirmations": 1,
+      "confirmed": false,
+      "verified": false,
+      "verified_price": null,
+      "reasons": [
+        "Meilleur prix trouvé pour YYZ-LAS"
+      ],
+      "deep_link": "https://www.aviasales.com/search/YYZ2610LAS01111?t=WS17930058001793036100000685YYZYWGLAS17935191001793576400000775LASYYCYWGYYZ_6bc113dd01d3d29c08e01885d32cbd37_22150&search_date=03092026&expected_price_uuid=01a06501-1959-8040-23fe-b813693d2257&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=xXL2Soq0AgWWpM9vBrolUg&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=cad&expected_price=350"
+    },
+    {
+      "route": "YYZ-MIA",
+      "price": 326.0,
+      "currency": "CAD",
+      "baseline": 356.0,
+      "drop_pct": 0.0843,
+      "z_score": 0.0,
+      "depart_date": "2027-01-11",
+      "return_date": "2027-01-18",
+      "airline": "AC",
+      "sources": [
+        "travelpayouts"
+      ],
+      "confirmations": 1,
+      "confirmed": false,
+      "verified": false,
+      "verified_price": null,
+      "reasons": [
+        "Meilleur prix trouvé pour YYZ-MIA"
+      ],
+      "deep_link": "https://www.aviasales.com/search/YYZ1101FLL18011?t=AC17996652001799689320000402YYZYULFLL18003078001800318900000185FLLYYZ_517d4d27c99c2449d061cfa610d077dc_20485&search_date=03092026&expected_price_uuid=01a06937-9e6c-8040-6577-002ee3765816&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=9J5i0ra48CXl81VZxkEsCg&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=cad&expected_price=326"
+    },
+    {
+      "route": "YYZ-MIA",
+      "price": 333.0,
+      "currency": "CAD",
+      "baseline": 333.0,
+      "drop_pct": 0,
+      "z_score": 0.0,
+      "depart_date": "2026-09-26",
+      "return_date": "2026-10-03",
+      "airline": "F8",
+      "sources": [
+        "travelpayouts"
+      ],
+      "confirmations": 1,
+      "confirmed": false,
+      "verified": false,
+      "verified_price": null,
+      "reasons": [
+        "Meilleur prix trouvé pour YYZ-MIA"
+      ],
+      "deep_link": "https://www.aviasales.com/search/YYZ2609FLL03101?t=F817904042001790416200000200YYZFLL17910246001791036300000195FLLYYZ_232e5dac9b2ef29243557b70a8c87ed7_20667&search_date=05092026&expected_price_uuid=01a071b3-24f7-8030-ab6c-62a312299a3e&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=AP_EazrEOz77U1k4uLwqXQ&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=cad&expected_price=333"
+    },
+    {
+      "route": "YYZ-NAS",
+      "price": 343.0,
+      "currency": "CAD",
+      "baseline": 343.0,
+      "drop_pct": 0,
+      "z_score": 0.0,
+      "depart_date": "2026-11-09",
+      "return_date": "2026-11-22",
+      "airline": "PD",
+      "sources": [
+        "travelpayouts"
+      ],
+      "confirmations": 1,
+      "confirmed": false,
+      "verified": false,
+      "verified_price": null,
+      "reasons": [
+        "Meilleur prix trouvé pour YYZ-NAS"
+      ],
+      "deep_link": "https://www.aviasales.com/search/YYZ0911NAS22111?t=PD17942112001794223500000205YYZNAS17953503001795362780000208NASYYZ_23d66ae80b41430ace5c25127d0bb4b0_21447&search_date=06092026&expected_price_uuid=01a07697-d78f-8040-63a9-905c8411b8a3&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=aIsa3HC7_s1Uwzo0idVprQ&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=cad&expected_price=343"
+    },
+    {
+      "route": "YYZ-LAS",
+      "price": 346.0,
+      "currency": "CAD",
+      "baseline": 346.0,
+      "drop_pct": 0,
       "z_score": 0.0,
       "depart_date": "2026-11-29",
-      "return_date": "2026-12-06",
-      "airline": "AC",
+      "return_date": "2026-12-04",
+      "airline": "WS",
       "sources": [
         "travelpayouts"
       ],
@@ -81,108 +213,20 @@
       "verified": false,
       "verified_price": null,
       "reasons": [
-        "Meilleur prix trouvé pour YUL-PUJ"
+        "Meilleur prix trouvé pour YYZ-LAS"
       ],
-      "deep_link": "https://www.aviasales.com/search/YUL2911PUJ06121?t=AC17959320001795988400000880YULYYZPUJ17965863001796599800000285PUJYUL_07870e9df3529dc90f52d9b55fe21795_30410&search_date=05092026&expected_price_uuid=01a071a8-bd30-8040-695b-03f92e4f4f66&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=rjglNf9lWvlDNnJ2Fp7gLQ&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=cad&expected_price=491"
+      "deep_link": "https://www.aviasales.com/search/YYZ2911LAS04121?t=WS17959434001795976100000725YYZYWGYEGLAS17963850001796449500000895LASYYCYEGYYZ_7af54565b414093420acb6b19e95b29c_21832&search_date=02092026&expected_price_uuid=01a0639e-75bc-8030-ab0a-769625a6f92c&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=-Dx31IO-YR0UxruN-x7N9A&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=cad&expected_price=346"
     },
     {
-      "route": "YUL-MIA",
-      "price": 361.0,
+      "route": "YYZ-MIA",
+      "price": 348.0,
       "currency": "CAD",
-      "baseline": 395.0,
-      "drop_pct": 0.0861,
-      "z_score": 0.0,
-      "depart_date": "2026-09-15",
-      "return_date": "2026-09-22",
-      "airline": "UA",
-      "sources": [
-        "travelpayouts"
-      ],
-      "confirmations": 1,
-      "confirmed": false,
-      "verified": false,
-      "verified_price": null,
-      "reasons": [
-        "Meilleur prix trouvé pour YUL-MIA"
-      ],
-      "deep_link": "https://www.aviasales.com/search/YUL1509MIA22091?t=AC17894713801789498320000449YULEWRMIA17900637001790076480000213MIAYUL_9abdcebf86bf21189b5ad6dff7b8c926_22605&search_date=06092026&expected_price_uuid=01a07763-a2b6-8040-2418-52a5ace120a4&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=2BZWBfjyFsbg9c3_KyyXAA&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=cad&expected_price=361"
-    },
-    {
-      "route": "YUL-MIA",
-      "price": 386.0,
-      "currency": "CAD",
-      "baseline": 395.0,
-      "drop_pct": 0.0228,
-      "z_score": 0.0,
-      "depart_date": "2026-09-13",
-      "return_date": "2026-09-19",
-      "airline": "UA",
-      "sources": [
-        "travelpayouts"
-      ],
-      "confirmations": 1,
-      "confirmed": false,
-      "verified": false,
-      "verified_price": null,
-      "reasons": [
-        "Meilleur prix trouvé pour YUL-MIA"
-      ],
-      "deep_link": "https://www.aviasales.com/search/YUL1309MIA19091?t=UA17892792001789310460000521YULEWRMIA17898063001789855560000821MIAEWRYUL_165020b361e2904e40a48f19271310e7_23909&search_date=06092026&expected_price_uuid=01a07460-07e5-8040-62f1-c83e6f69a1eb&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=AQvjFhqPz0O_TM7rjNnLwg&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=cad&expected_price=386"
-    },
-    {
-      "route": "YUL-CUN",
-      "price": 481.0,
-      "currency": "CAD",
-      "baseline": 491.0,
-      "drop_pct": 0.0204,
-      "z_score": 0.0,
-      "depart_date": "2026-12-02",
-      "return_date": "2026-12-19",
-      "airline": "AC",
-      "sources": [
-        "travelpayouts"
-      ],
-      "confirmations": 1,
-      "confirmed": false,
-      "verified": false,
-      "verified_price": null,
-      "reasons": [
-        "Meilleur prix trouvé pour YUL-CUN"
-      ],
-      "deep_link": "https://www.aviasales.com/search/YUL0212CUN19121?t=AC17961984001796216400000300YULCUN17977134001797792180001313CUNYOWYUL_aee0029c20a9e3ec0f98874dfe174e27_29818&search_date=05092026&expected_price_uuid=01a07328-17e8-8040-2583-db1b02c32356&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=353OrqDOMWd4k0M8p2eHxg&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=cad&expected_price=481"
-    },
-    {
-      "route": "YUL-MIA",
-      "price": 391.0,
-      "currency": "CAD",
-      "baseline": 395.0,
-      "drop_pct": 0.0101,
-      "z_score": 0.0,
-      "depart_date": "2026-09-14",
-      "return_date": "2026-09-19",
-      "airline": "UA",
-      "sources": [
-        "travelpayouts"
-      ],
-      "confirmations": 1,
-      "confirmed": false,
-      "verified": false,
-      "verified_price": null,
-      "reasons": [
-        "Meilleur prix trouvé pour YUL-MIA"
-      ],
-      "deep_link": "https://www.aviasales.com/search/YUL1409MIA19091?t=UA17893995001789429920000507YULEWRMIA17898063001789834200000465MIAEWRYUL_21c4acf5c74b101a62eb06ba43adb500_24235&search_date=06092026&expected_price_uuid=01a0745f-9579-8040-6067-4a477acbc5e5&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=VOb2-Oe6RNAUa22B1W5QLA&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=cad&expected_price=391"
-    },
-    {
-      "route": "YUL-MIA",
-      "price": 395.0,
-      "currency": "CAD",
-      "baseline": 391.0,
+      "baseline": 348.0,
       "drop_pct": 0,
       "z_score": 0.0,
-      "depart_date": "2026-09-19",
-      "return_date": "2026-09-26",
-      "airline": "AC",
+      "depart_date": "2027-01-12",
+      "return_date": "2027-02-02",
+      "airline": "PD",
       "sources": [
         "travelpayouts"
       ],
@@ -191,20 +235,20 @@
       "verified": false,
       "verified_price": null,
       "reasons": [
-        "Meilleur prix trouvé pour YUL-MIA"
+        "Meilleur prix trouvé pour YYZ-MIA"
       ],
-      "deep_link": "https://www.aviasales.com/search/YUL1909MIA26091?t=AC17898426001789856220000227YULMIA17904093001790422080000213MIAYUL_f8322d64c32e3ee45aae0b95b65a9a57_24473&search_date=05092026&expected_price_uuid=01a0717f-c246-8030-ac18-eed0bae6d485&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=CEvqtYJMTs_LVN6frhbP8Q&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=cad&expected_price=395"
+      "deep_link": "https://www.aviasales.com/search/YYZ1201MIA02021?t=PD17997465001799759100000210YYZMIA18015771001801589100000200MIAYYZ_d67b635f66f184e5054e776ac35ebdf0_21948&search_date=02092026&expected_price_uuid=01a0628b-e0d2-8030-635a-bcdf255d1d9f&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=Xwr4BWFeWJlF_f9v3XpWng&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=cad&expected_price=348"
     },
     {
-      "route": "YUL-MIA",
-      "price": 400.0,
+      "route": "YYZ-MIA",
+      "price": 356.0,
       "currency": "CAD",
-      "baseline": 395.0,
+      "baseline": 326.0,
       "drop_pct": 0,
       "z_score": 0.0,
-      "depart_date": "2026-10-04",
-      "return_date": "2026-10-10",
-      "airline": "AC",
+      "depart_date": "2027-01-13",
+      "return_date": "2027-01-20",
+      "airline": "PD",
       "sources": [
         "travelpayouts"
       ],
@@ -213,20 +257,20 @@
       "verified": false,
       "verified_price": null,
       "reasons": [
-        "Meilleur prix trouvé pour YUL-MIA"
+        "Meilleur prix trouvé pour YYZ-MIA"
       ],
-      "deep_link": "https://www.aviasales.com/search/YUL0410MIA10101?t=AC17911458001791202440000944YULYYZMIA17916224401791648600000436MIAEWRYUL_bea948fd6bd17a0ce65ab1a8bff6b253_25317&search_date=03092026&expected_price_uuid=01a064ec-1866-8040-6ef9-df1b1a7f4c83&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=wgvn-u6gGk7uyyCqoBfG-A&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=cad&expected_price=400"
+      "deep_link": "https://www.aviasales.com/search/YYZ1301MIA20011?t=PD17998329001799845500000210YYZMIA18004539001800465900000200MIAYYZ_a243184a4476417c7e3099dfc14247ae_22421&search_date=02092026&expected_price_uuid=01a0628c-19e9-8030-a411-18042682b01d&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=h0z6-rFTVatMNspDJ0HKyQ&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=cad&expected_price=356"
     },
     {
-      "route": "YUL-MIA",
-      "price": 441.0,
+      "route": "YYZ-MIA",
+      "price": 358.0,
       "currency": "CAD",
-      "baseline": 400.0,
+      "baseline": 358.0,
       "drop_pct": 0,
       "z_score": 0.0,
-      "depart_date": "2026-11-03",
-      "return_date": "2026-11-10",
-      "airline": "AC",
+      "depart_date": "2026-09-11",
+      "return_date": "2026-09-27",
+      "airline": "AA",
       "sources": [
         "travelpayouts"
       ],
@@ -235,53 +279,9 @@
       "verified": false,
       "verified_price": null,
       "reasons": [
-        "Meilleur prix trouvé pour YUL-MIA"
+        "Meilleur prix trouvé pour YYZ-MIA"
       ],
-      "deep_link": "https://www.aviasales.com/search/YUL0311MIA10111?t=AC17936934001793708160000246YULMIA17943165001794329700000220MIAYUL_ed9debee666791180c12ae01a4a939c7_27496&search_date=08092026&expected_price_uuid=01a08264-416e-8040-223b-99b139cd4cdb&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=-17e-aRc-t6brl0ZnBeLMw&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=cad&expected_price=441"
-    },
-    {
-      "route": "YUL-CUN",
-      "price": 484.0,
-      "currency": "CAD",
-      "baseline": 484.0,
-      "drop_pct": 0,
-      "z_score": 0.0,
-      "depart_date": "2026-11-30",
-      "return_date": "2026-12-10",
-      "airline": "AC",
-      "sources": [
-        "travelpayouts"
-      ],
-      "confirmations": 1,
-      "confirmed": false,
-      "verified": false,
-      "verified_price": null,
-      "reasons": [
-        "Meilleur prix trouvé pour YUL-CUN"
-      ],
-      "deep_link": "https://www.aviasales.com/search/YUL3011CUN10121?t=AC17960550001796081400000440YULYYZCUN17968986001796913900000255CUNYUL_1a414308d81d67b1aa659f674a525b8f_30529&search_date=02092026&expected_price_uuid=01a063eb-f59b-8040-aae7-961d7d8e4a91&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=BrF6soNx-0k8bXZtqxMwAg&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=cad&expected_price=484"
-    },
-    {
-      "route": "YUL-CUN",
-      "price": 487.0,
-      "currency": "CAD",
-      "baseline": 487.0,
-      "drop_pct": 0,
-      "z_score": 0.0,
-      "depart_date": "2026-09-22",
-      "return_date": "2026-09-29",
-      "airline": "UA",
-      "sources": [
-        "travelpayouts"
-      ],
-      "confirmations": 1,
-      "confirmed": false,
-      "verified": false,
-      "verified_price": null,
-      "reasons": [
-        "Meilleur prix trouvé pour YUL-CUN"
-      ],
-      "deep_link": "https://www.aviasales.com/search/YUL2209CUN29091?t=UA17900568001790084340000519YULEWRCUN17906682601790717160000755CUNIAHORDYUL_19fc681e25465a9674595e7b98d90788_30183&search_date=05092026&expected_price_uuid=01a07329-8d4d-8040-6888-74af0ef1e161&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=PcDlkfJv3OCI3VzZ5mIO7A&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=cad&expected_price=487"
+      "deep_link": "https://www.aviasales.com/search/YYZ1109MIA27091?t=AA17891064001789119420000217YYZMIA17904909001790510340000324MIADCAYYZ_6bb9bb495aee9a8e18f77516d2b59237_22461&search_date=07092026&expected_price_uuid=01a0796d-9882-8040-a007-474a1d7f6d9c&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=kgt-djPqtEOounpzJBoYGg&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=cad&expected_price=358"
     }
   ]
 }
