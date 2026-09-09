@@ -269,6 +269,17 @@ const DESTINATION_META = {
   NBO: { city: 'Nairobi',      country: 'Kenya',            emoji: '🇰🇪', image: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Nairobi_skyline_from_Gem_Hotel.jpg/960px-Nairobi_skyline_from_Gem_Hotel.jpg' },
 };
 const ORIGIN_NAMES = { YUL: 'Montréal', YYZ: 'Toronto' };
+// Alias aéroport -> code "principal" utilisé dans DESTINATION_META, pour les
+// villes à plusieurs aéroports (le pipeline compare déjà tous ces aéroports
+// et ne garde que le moins cher — voir flightdeals/airports.py côté backend).
+const AIRPORT_ALIAS = {
+  ORY: 'CDG',              // Paris (Orly -> même fiche que CDG)
+  LGA: 'JFK', EWR: 'JFK',  // New York (LaGuardia/Newark -> même fiche que JFK)
+  LGW: 'LHR', STN: 'LHR',  // Londres (Gatwick/Stansted -> même fiche que LHR)
+  HND: 'NRT',              // Tokyo (Haneda -> même fiche que NRT)
+  NLU: 'MEX',              // Mexico (Felipe Ángeles -> même fiche que MEX)
+  DMK: 'BKK',              // Bangkok (Don Mueang -> même fiche que BKK)
+};
 const AIRLINE_NAMES = {
   AC: 'Air Canada', AF: 'Air France', LH: 'Lufthansa',
   TS: 'Air Transat', DL: 'Delta', UA: 'United', WS: 'WestJet', BA: 'British Airways',
@@ -277,7 +288,8 @@ const AIRLINE_NAMES = {
 // photo random — on utilise un dégradé neutre plutôt qu'une image non pertinente).
 function routeMeta(route) {
   const [origin, dest] = route.split('-');
-  const base = DESTINATION_META[dest] || { city: dest, country: '', emoji: '🌍', image: null };
+  const lookupCode = AIRPORT_ALIAS[dest] || dest;
+  const base = DESTINATION_META[lookupCode] || { city: dest, country: '', emoji: '🌍', image: null };
   return { ...base, origin, originName: ORIGIN_NAMES[origin] || origin };
 }
 
