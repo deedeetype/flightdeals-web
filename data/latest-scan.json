@@ -1,139 +1,287 @@
 {
-  "started_at": "2026-09-09T00:24:09",
-  "finished_at": "2026-09-09T00:24:11",
+  "started_at": "2026-09-09T01:40:23",
+  "finished_at": "2026-09-09T01:40:26",
   "providers": [
     "travelpayouts"
   ],
   "routes_scanned": 15,
-  "quotes_seen": 150,
+  "quotes_seen": 149,
   "per_provider": {
     "travelpayouts": {
-      "quotes": 150,
+      "quotes": 149,
       "errors": []
     }
   },
-  "deals_total": 5,
+  "deals_total": 0,
   "deals_confirmed": 0,
   "deals_new": 0,
   "errors": [],
-  "is_top_deals": false,
+  "is_top_deals": true,
   "rejected_count": 0,
   "deals": [
+    {
+      "route": "YUL-MIA",
+      "price": 339.0,
+      "currency": "CAD",
+      "baseline": 441.0,
+      "drop_pct": 0.2313,
+      "z_score": 0.0,
+      "depart_date": "2026-11-02",
+      "return_date": "2026-11-10",
+      "airline": "AC",
+      "sources": [
+        "travelpayouts"
+      ],
+      "confirmations": 1,
+      "confirmed": false,
+      "verified": false,
+      "verified_price": null,
+      "reasons": [
+        "Meilleur prix trouvé pour YUL-MIA"
+      ],
+      "deep_link": "https://www.aviasales.com/search/YUL0211MIA10111?t=AC17936070001793621760000246YULMIA17942976001794310320000212MIAYUL_103d805e4ff6f78723f0b0df10c90b96_21359&search_date=03092026&expected_price_uuid=01a0674c-9e91-8040-6631-57f09856e6b7&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=BmZSBsTg5-_rTcsO6QPQTg&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=cad&expected_price=339"
+    },
     {
       "route": "YUL-PUJ",
       "price": 486.0,
       "currency": "CAD",
-      "baseline": 917.0,
-      "drop_pct": 0.47,
-      "z_score": -1.4,
+      "baseline": 542.0,
+      "drop_pct": 0.1033,
+      "z_score": 0.0,
       "depart_date": "2026-10-14",
       "return_date": "2026-10-22",
-      "airline": "Arajet",
+      "airline": "DM",
       "sources": [
         "travelpayouts"
       ],
       "confirmations": 1,
       "confirmed": false,
-      "verified": true,
-      "verified_price": 486.0,
+      "verified": false,
+      "verified_price": null,
       "reasons": [
-        "-47% vs médiane 917",
-        "✅ vérifié en direct: 486 CAD (serpapi)"
+        "Meilleur prix trouvé pour YUL-PUJ"
       ],
-      "deep_link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=CAD&tfs=CBwQAhoeEgoyMDI2LTEwLTE0agcIARIDWVVMcgcIARIDUFVKGh4SCjIwMjYtMTAtMjJqBwgBEgNQVUpyBwgBEgNZVUxAAUgBcAGYAQE&tfu=EgIIAQ"
-    },
-    {
-      "route": "YUL-NRT",
-      "price": 1034.0,
-      "currency": "CAD",
-      "baseline": 1854.0,
-      "drop_pct": 0.4423,
-      "z_score": -2.79,
-      "depart_date": "2027-02-01",
-      "return_date": "2027-02-15",
-      "airline": "WestJet",
-      "sources": [
-        "travelpayouts"
-      ],
-      "confirmations": 1,
-      "confirmed": false,
-      "verified": true,
-      "verified_price": 1034.0,
-      "reasons": [
-        "-44% vs médiane 1854",
-        "z-score robuste -2.8",
-        "✅ vérifié en direct: 1034 CAD (serpapi)"
-      ],
-      "deep_link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=CAD&tfs=CBwQAhoeEgoyMDI3LTAyLTAxagcIARIDWVVMcgcIARIDTlJUGh4SCjIwMjctMDItMTVqBwgBEgNOUlRyBwgBEgNZVUxAAUgBcAGYAQE&tfu=EgIIAQ"
+      "deep_link": "https://www.aviasales.com/search/YUL1410PUJ22101?t=DM17919612001791978000000280YULPUJ17926977001792714800000285PUJYUL_09bfc45186ccba4dafc462b6b35bbb2f_30276&search_date=08092026&expected_price_uuid=01a0829b-b09d-8040-66d7-6362e7d52b15&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=BU0g287F9f-a2A0h-WHJhw&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=cad&expected_price=486"
     },
     {
       "route": "YUL-PUJ",
-      "price": 518.0,
+      "price": 491.0,
       "currency": "CAD",
-      "baseline": 917.0,
-      "drop_pct": 0.4351,
-      "z_score": -1.38,
+      "baseline": 542.0,
+      "drop_pct": 0.0941,
+      "z_score": 0.0,
       "depart_date": "2026-11-29",
       "return_date": "2026-12-06",
-      "airline": "Air Canada",
+      "airline": "AC",
       "sources": [
         "travelpayouts"
       ],
       "confirmations": 1,
       "confirmed": false,
-      "verified": true,
-      "verified_price": 518.0,
+      "verified": false,
+      "verified_price": null,
       "reasons": [
-        "-46% vs médiane 917",
-        "✅ vérifié en direct: 518 CAD (serpapi)"
+        "Meilleur prix trouvé pour YUL-PUJ"
       ],
-      "deep_link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=CAD&tfs=CBwQAhoeEgoyMDI2LTExLTI5agcIARIDWVVMcgcIARIDUFVKGh4SCjIwMjYtMTItMDZqBwgBEgNQVUpyBwgBEgNZVUxAAUgBcAGYAQE&tfu=EgIIAQ"
+      "deep_link": "https://www.aviasales.com/search/YUL2911PUJ06121?t=AC17959320001795988400000880YULYYZPUJ17965863001796599800000285PUJYUL_07870e9df3529dc90f52d9b55fe21795_30410&search_date=05092026&expected_price_uuid=01a071a8-bd30-8040-695b-03f92e4f4f66&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=rjglNf9lWvlDNnJ2Fp7gLQ&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=cad&expected_price=491"
     },
     {
-      "route": "YUL-NRT",
-      "price": 1303.0,
+      "route": "YUL-MIA",
+      "price": 361.0,
       "currency": "CAD",
-      "baseline": 1854.0,
-      "drop_pct": 0.2972,
-      "z_score": -2.22,
-      "depart_date": "2027-01-22",
-      "return_date": "2027-02-06",
-      "airline": "WestJet",
+      "baseline": 395.0,
+      "drop_pct": 0.0861,
+      "z_score": 0.0,
+      "depart_date": "2026-09-15",
+      "return_date": "2026-09-22",
+      "airline": "UA",
       "sources": [
         "travelpayouts"
       ],
       "confirmations": 1,
       "confirmed": false,
-      "verified": true,
-      "verified_price": 1303.0,
+      "verified": false,
+      "verified_price": null,
       "reasons": [
-        "-35% vs médiane 1854",
-        "✅ vérifié en direct: 1303 CAD (serpapi)"
+        "Meilleur prix trouvé pour YUL-MIA"
       ],
-      "deep_link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=CAD&tfs=CBwQAhoeEgoyMDI3LTAxLTIyagcIARIDWVVMcgcIARIDTlJUGh4SCjIwMjctMDItMDZqBwgBEgNOUlRyBwgBEgNZVUxAAUgBcAGYAQE&tfu=EgIIAQ"
+      "deep_link": "https://www.aviasales.com/search/YUL1509MIA22091?t=AC17894713801789498320000449YULEWRMIA17900637001790076480000213MIAYUL_9abdcebf86bf21189b5ad6dff7b8c926_22605&search_date=06092026&expected_price_uuid=01a07763-a2b6-8040-2418-52a5ace120a4&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=2BZWBfjyFsbg9c3_KyyXAA&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=cad&expected_price=361"
     },
     {
-      "route": "YUL-PUJ",
-      "price": 686.0,
+      "route": "YUL-MIA",
+      "price": 386.0,
       "currency": "CAD",
-      "baseline": 917.0,
-      "drop_pct": 0.2519,
-      "z_score": -1.22,
-      "depart_date": "2026-11-07",
-      "return_date": "2026-11-14",
-      "airline": "Air Transat",
+      "baseline": 395.0,
+      "drop_pct": 0.0228,
+      "z_score": 0.0,
+      "depart_date": "2026-09-13",
+      "return_date": "2026-09-19",
+      "airline": "UA",
       "sources": [
         "travelpayouts"
       ],
       "confirmations": 1,
       "confirmed": false,
-      "verified": true,
-      "verified_price": 686.0,
+      "verified": false,
+      "verified_price": null,
       "reasons": [
-        "-41% vs médiane 917",
-        "✅ vérifié en direct: 686 CAD (serpapi)"
+        "Meilleur prix trouvé pour YUL-MIA"
       ],
-      "deep_link": "https://www.google.com/travel/flights?hl=en&gl=us&curr=CAD&tfs=CBwQAhoeEgoyMDI2LTExLTA3agcIARIDWVVMcgcIARIDUFVKGh4SCjIwMjYtMTEtMTRqBwgBEgNQVUpyBwgBEgNZVUxAAUgBcAGYAQE&tfu=EgIIAQ"
+      "deep_link": "https://www.aviasales.com/search/YUL1309MIA19091?t=UA17892792001789310460000521YULEWRMIA17898063001789855560000821MIAEWRYUL_165020b361e2904e40a48f19271310e7_23909&search_date=06092026&expected_price_uuid=01a07460-07e5-8040-62f1-c83e6f69a1eb&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=AQvjFhqPz0O_TM7rjNnLwg&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=cad&expected_price=386"
+    },
+    {
+      "route": "YUL-CUN",
+      "price": 481.0,
+      "currency": "CAD",
+      "baseline": 491.0,
+      "drop_pct": 0.0204,
+      "z_score": 0.0,
+      "depart_date": "2026-12-02",
+      "return_date": "2026-12-19",
+      "airline": "AC",
+      "sources": [
+        "travelpayouts"
+      ],
+      "confirmations": 1,
+      "confirmed": false,
+      "verified": false,
+      "verified_price": null,
+      "reasons": [
+        "Meilleur prix trouvé pour YUL-CUN"
+      ],
+      "deep_link": "https://www.aviasales.com/search/YUL0212CUN19121?t=AC17961984001796216400000300YULCUN17977134001797792180001313CUNYOWYUL_aee0029c20a9e3ec0f98874dfe174e27_29818&search_date=05092026&expected_price_uuid=01a07328-17e8-8040-2583-db1b02c32356&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=353OrqDOMWd4k0M8p2eHxg&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=cad&expected_price=481"
+    },
+    {
+      "route": "YUL-MIA",
+      "price": 391.0,
+      "currency": "CAD",
+      "baseline": 395.0,
+      "drop_pct": 0.0101,
+      "z_score": 0.0,
+      "depart_date": "2026-09-14",
+      "return_date": "2026-09-19",
+      "airline": "UA",
+      "sources": [
+        "travelpayouts"
+      ],
+      "confirmations": 1,
+      "confirmed": false,
+      "verified": false,
+      "verified_price": null,
+      "reasons": [
+        "Meilleur prix trouvé pour YUL-MIA"
+      ],
+      "deep_link": "https://www.aviasales.com/search/YUL1409MIA19091?t=UA17893995001789429920000507YULEWRMIA17898063001789834200000465MIAEWRYUL_21c4acf5c74b101a62eb06ba43adb500_24235&search_date=06092026&expected_price_uuid=01a0745f-9579-8040-6067-4a477acbc5e5&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=VOb2-Oe6RNAUa22B1W5QLA&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=cad&expected_price=391"
+    },
+    {
+      "route": "YUL-MIA",
+      "price": 395.0,
+      "currency": "CAD",
+      "baseline": 391.0,
+      "drop_pct": 0,
+      "z_score": 0.0,
+      "depart_date": "2026-09-19",
+      "return_date": "2026-09-26",
+      "airline": "AC",
+      "sources": [
+        "travelpayouts"
+      ],
+      "confirmations": 1,
+      "confirmed": false,
+      "verified": false,
+      "verified_price": null,
+      "reasons": [
+        "Meilleur prix trouvé pour YUL-MIA"
+      ],
+      "deep_link": "https://www.aviasales.com/search/YUL1909MIA26091?t=AC17898426001789856220000227YULMIA17904093001790422080000213MIAYUL_f8322d64c32e3ee45aae0b95b65a9a57_24473&search_date=05092026&expected_price_uuid=01a0717f-c246-8030-ac18-eed0bae6d485&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=CEvqtYJMTs_LVN6frhbP8Q&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=cad&expected_price=395"
+    },
+    {
+      "route": "YUL-MIA",
+      "price": 400.0,
+      "currency": "CAD",
+      "baseline": 395.0,
+      "drop_pct": 0,
+      "z_score": 0.0,
+      "depart_date": "2026-10-04",
+      "return_date": "2026-10-10",
+      "airline": "AC",
+      "sources": [
+        "travelpayouts"
+      ],
+      "confirmations": 1,
+      "confirmed": false,
+      "verified": false,
+      "verified_price": null,
+      "reasons": [
+        "Meilleur prix trouvé pour YUL-MIA"
+      ],
+      "deep_link": "https://www.aviasales.com/search/YUL0410MIA10101?t=AC17911458001791202440000944YULYYZMIA17916224401791648600000436MIAEWRYUL_bea948fd6bd17a0ce65ab1a8bff6b253_25317&search_date=03092026&expected_price_uuid=01a064ec-1866-8040-6ef9-df1b1a7f4c83&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=wgvn-u6gGk7uyyCqoBfG-A&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=cad&expected_price=400"
+    },
+    {
+      "route": "YUL-MIA",
+      "price": 441.0,
+      "currency": "CAD",
+      "baseline": 400.0,
+      "drop_pct": 0,
+      "z_score": 0.0,
+      "depart_date": "2026-11-03",
+      "return_date": "2026-11-10",
+      "airline": "AC",
+      "sources": [
+        "travelpayouts"
+      ],
+      "confirmations": 1,
+      "confirmed": false,
+      "verified": false,
+      "verified_price": null,
+      "reasons": [
+        "Meilleur prix trouvé pour YUL-MIA"
+      ],
+      "deep_link": "https://www.aviasales.com/search/YUL0311MIA10111?t=AC17936934001793708160000246YULMIA17943165001794329700000220MIAYUL_ed9debee666791180c12ae01a4a939c7_27496&search_date=08092026&expected_price_uuid=01a08264-416e-8040-223b-99b139cd4cdb&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=-17e-aRc-t6brl0ZnBeLMw&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=cad&expected_price=441"
+    },
+    {
+      "route": "YUL-CUN",
+      "price": 484.0,
+      "currency": "CAD",
+      "baseline": 484.0,
+      "drop_pct": 0,
+      "z_score": 0.0,
+      "depart_date": "2026-11-30",
+      "return_date": "2026-12-10",
+      "airline": "AC",
+      "sources": [
+        "travelpayouts"
+      ],
+      "confirmations": 1,
+      "confirmed": false,
+      "verified": false,
+      "verified_price": null,
+      "reasons": [
+        "Meilleur prix trouvé pour YUL-CUN"
+      ],
+      "deep_link": "https://www.aviasales.com/search/YUL3011CUN10121?t=AC17960550001796081400000440YULYYZCUN17968986001796913900000255CUNYUL_1a414308d81d67b1aa659f674a525b8f_30529&search_date=02092026&expected_price_uuid=01a063eb-f59b-8040-aae7-961d7d8e4a91&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=BrF6soNx-0k8bXZtqxMwAg&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=cad&expected_price=484"
+    },
+    {
+      "route": "YUL-CUN",
+      "price": 487.0,
+      "currency": "CAD",
+      "baseline": 487.0,
+      "drop_pct": 0,
+      "z_score": 0.0,
+      "depart_date": "2026-09-22",
+      "return_date": "2026-09-29",
+      "airline": "UA",
+      "sources": [
+        "travelpayouts"
+      ],
+      "confirmations": 1,
+      "confirmed": false,
+      "verified": false,
+      "verified_price": null,
+      "reasons": [
+        "Meilleur prix trouvé pour YUL-CUN"
+      ],
+      "deep_link": "https://www.aviasales.com/search/YUL2209CUN29091?t=UA17900568001790084340000519YULEWRCUN17906682601790717160000755CUNIAHORDYUL_19fc681e25465a9674595e7b98d90788_30183&search_date=05092026&expected_price_uuid=01a07329-8d4d-8040-6888-74af0ef1e161&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=PcDlkfJv3OCI3VzZ5mIO7A&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=cad&expected_price=487"
     }
   ]
 }
